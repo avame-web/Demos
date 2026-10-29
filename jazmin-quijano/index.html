@@ -135,9 +135,42 @@ footer{border-top:1px solid var(--line);padding-block:34px 60px;color:var(--grey
 @keyframes up{to{transform:none}}
 :focus-visible{outline:2px solid var(--white);outline-offset:4px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv,.js .hero h1 .ln>span{opacity:1;transform:none}}
+
+/* tema clínico: claro, elegante, acento verde azulado */
+body.clinico{--bg:#f6f5f1;--bg-2:#ffffff;--white:#0f2433;--grey:#6b7780;--grey-2:#b4bcc1;--line:rgba(15,36,51,.12);--glass:rgba(255,255,255,.6);--acc:#2c7a78}
+.clinico::after{opacity:.025}
+.clinico .demo{color:#f6f5f1}.clinico .demo a{color:#f6f5f1}
+.clinico .nav{background:rgba(255,255,255,.72);box-shadow:0 10px 30px -18px rgba(15,36,51,.35)}
+.clinico .links a{color:#3a4a55;text-decoration-color:rgba(15,36,51,.25)}
+.clinico .cta{background:var(--white);color:#fff;border-color:var(--white)}
+.clinico .cta:hover{background:var(--acc)}
+.clinico .gr,.clinico .hero h1 .l2{color:var(--acc)}
+.clinico .cap{color:#55636c}
+.clinico .light{background:radial-gradient(circle,rgba(44,122,120,.10),transparent 65%)}
+.clinico .portrait .halo{background:radial-gradient(circle,rgba(44,122,120,.14),rgba(44,122,120,.03) 60%,transparent 70%)}
+.clinico .portrait .disc{background:#e7eceb;border-color:rgba(44,122,120,.25)}
+.clinico .portrait .disc img{filter:grayscale(1) contrast(.95) brightness(1.15);opacity:.55}
+.clinico .portrait .mono{color:var(--white);text-shadow:0 6px 30px rgba(255,255,255,.8)}
+.clinico .portrait .ring{border-color:rgba(44,122,120,.3)}.clinico .portrait .ring::before{background:var(--acc)}
+.clinico .badge{background:rgba(255,255,255,.85);box-shadow:0 14px 30px -16px rgba(15,36,51,.35)}
+.clinico .photo{background:#e7eceb;box-shadow:0 40px 80px -40px rgba(15,36,51,.35)}
+.clinico .photo img{filter:grayscale(.2) contrast(1.02)}
+.clinico .photo .tag{background:rgba(255,255,255,.8)}
+.clinico .about p,.clinico .pillar p,.clinico .info p{color:#3a4a55!important}
+.clinico .about p b{color:var(--white)}
+.clinico .quote{border-left-color:var(--acc)}
+.clinico .pillar .n{color:var(--acc)}
+.clinico .item:hover h3{color:var(--acc)}.clinico .item:hover .arr{color:var(--acc)}
+.clinico .card{background:#fff;box-shadow:0 20px 40px -30px rgba(15,36,51,.3)}
+.clinico .card:hover{background:#fff}
+.clinico form{box-shadow:0 30px 60px -40px rgba(15,36,51,.35)}
+.clinico select option{background:#fff}
+.clinico .send{color:#fff}.clinico .send:hover{background:var(--acc)}
+.clinico .wa svg{fill:#fff}
+.clinico :focus-visible{outline-color:var(--acc)}
 </style>
 </head>
-<body>
+<body class="">
 <div class="demo">Muestra gratuita preparada para <b>Jazmín Quijano</b> por Avame.<a href="https://calendar.app.google/eAsZzpuzk8ziZT5h7" target="_blank" rel="noopener">¿Te gusta? Agenda 10 min →</a></div>
 
 <header id="hdr"><div class="w"><div class="nav">
@@ -167,7 +200,7 @@ footer{border-top:1px solid var(--line);padding-block:34px 60px;color:var(--grey
 </section>
 
 <section id="sobre" data-s><div class="w about">
-  <div class="photo rv"><img src="https://images.unsplash.com/photo-1758273240331-745ccab011a2?auto=format&w=1000&q=80&fit=crop" alt="Sesión de terapia en consultorio" loading="lazy"><span class="tag">Tu fotografía aquí</span></div>
+  <div class="photo rv"><img src="https://images.unsplash.com/photo-1758273240331-745ccab011a2?auto=format&w=1000&q=80&fit=crop" alt="" loading="lazy"><span class="tag">Tu fotografía aquí</span></div>
   <div class="rv">
     <h2 class="h2">Sobre <span class="gr">Jazmín</span></h2>
     <p><b>Jazmín Quijano</b> es psicóloga en Ciudad Satélite. Acompaña a adolescentes, jóvenes y adultos a salir de la confusión, recuperar la confianza en sí mismos y aprender a manejar lo que sienten.</p>
