@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Centro PAKI · Centro Psico-Lúdico Afectivo en Ciudad Satélite</title>
+<meta name="description" content="Centro PAKI: terapia psicológica infantil, adolescentes y adultos, terapia de lenguaje, evaluaciones, talleres y escuela para padres en Ciudad Satélite, Naucalpan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap">
+<style>
+:root{
+  --cream:#fbf6ec;--paper:#fffdf8;--ink:#1b2a4a;--ink-2:#55607a;--line:rgba(27,42,74,.12);
+  --yel:#fdb913;--red:#e5332a;--blue:#1ea5de;--ora:#f39200;--maroon:#b7322f;--navy:#1b2a4a;
+  --fd:"Unbounded","Arial Black",system-ui,sans-serif;--fb:"Nunito",system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1);--r:28px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}img,svg{display:block;max-width:100%}
+.w{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+h1,h2,h3{font-family:var(--fd);font-weight:700;line-height:1.08;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.demo{background:var(--navy);color:#fff;text-align:center;font-size:13.5px;padding:9px 16px}
+.demo a{color:var(--yel);font-weight:800;margin-left:6px;white-space:nowrap}
+.stripe{display:flex;height:6px}.stripe i{flex:1}.stripe i:nth-child(1){background:var(--navy)}.stripe i:nth-child(2){background:var(--blue)}.stripe i:nth-child(3){background:var(--red)}.stripe i:nth-child(4){background:var(--ora)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:800 15.5px var(--fb);padding:15px 26px;border-radius:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s}
+.btn:hover{transform:translate(-2px,-3px)}
+.btn-y{background:var(--yel);color:var(--navy);box-shadow:4px 4px 0 var(--navy)}
+.btn-y:hover{box-shadow:7px 7px 0 var(--navy)}
+.btn-n{background:var(--navy);color:#fff;box-shadow:4px 4px 0 var(--blue)}
+.btn-n:hover{box-shadow:7px 7px 0 var(--blue)}
+.btn-o{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.btn svg{width:20px;height:20px}
+.kick{display:inline-flex;align-items:center;gap:10px;font:800 12.5px var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--navy)}
+.kick b{display:inline-flex;gap:4px}.kick b i{width:10px;height:10px;display:inline-block}
+.kick b i:nth-child(1){background:var(--blue);border-radius:50%}.kick b i:nth-child(2){width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid var(--ora)}.kick b i:nth-child(3){background:var(--red)}
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(251,246,236,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{height:34px;width:auto}
+.brand small{font:800 10.5px var(--fb);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);line-height:1.3;border-left:2px solid var(--line);padding-left:12px}
+.links{display:flex;gap:24px;font-weight:800;font-size:15px}
+.links a{text-decoration:none;position:relative}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:var(--yel);transform:scaleX(0);transition:transform .3s var(--ease)}
+.links a:hover::after{transform:scaleX(1)}
+@media(max-width:980px){.links{display:none}}
+@media(max-width:560px){.brand small{display:none}.nav .btn{padding:11px 16px;font-size:14px}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:70px 90px}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:960px){.hero-in{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(40px,6.4vw,82px);margin:22px 0 22px}
+.hero h1 .hl{position:relative;display:inline-block}
+.hero h1 .c1{color:var(--blue)}.hero h1 .c2{color:var(--red)}.hero h1 .c3{color:var(--ora)}
+.hero p.lead{font-size:clamp(17px,1.7vw,21px);color:var(--ink-2);max-width:33em;margin:0 0 30px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--navy);border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
+.chip .s{color:#f4a821}
+.stage{position:relative;aspect-ratio:1/1;max-width:560px;width:100%;justify-self:center}
+.disc{position:absolute;inset:6%;border-radius:50%;background:var(--yel)}
+.disc::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:3px dashed rgba(27,42,74,.25);animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.char{position:absolute;bottom:8%;filter:drop-shadow(0 18px 14px rgba(27,42,74,.18))}
+.char svg{width:100%;height:auto}
+.ch1{left:6%;width:28%;animation:bob 3.2s ease-in-out infinite}
+.ch2{left:36%;width:30%;bottom:12%;animation:bob 3.6s ease-in-out infinite -.8s}
+.ch3{right:4%;width:27%;animation:bob 3s ease-in-out infinite -1.6s}
+@keyframes bob{50%{transform:translateY(-14px) rotate(-1.5deg)}}
+.lid{animation:blink 5s infinite;transform-origin:center;transform-box:fill-box}
+@keyframes blink{0%,94%,100%{transform:scaleY(0)}96%{transform:scaleY(1)}}
+.fl{position:absolute;animation:drift 7s ease-in-out infinite}
+@keyframes drift{50%{transform:translate(8px,-14px) rotate(14deg)}}
+.badge{position:absolute;background:#fff;border:2px solid var(--navy);border-radius:18px;padding:10px 14px;box-shadow:4px 4px 0 var(--navy);font-weight:800;font-size:14px;line-height:1.25;animation:bob 4s ease-in-out infinite}
+.badge small{display:block;font-weight:700;color:var(--ink-2);font-size:12px}
+.b1{left:0;top:8%}.b2{right:0;top:16%;animation-delay:-2s}
+/* marquee */
+.mq{background:var(--navy);color:#fff;overflow:hidden;white-space:nowrap;padding:18px 0;font:700 16px var(--fd);letter-spacing:.01em}
+.mq .tr{display:inline-flex;animation:mq 36s linear infinite}
+.mq span{display:inline-flex;align-items:center;gap:22px;padding-right:22px}
+.mq span::after{content:"";width:12px;height:12px;background:var(--yel);display:inline-block}
+.mq span:nth-child(3n+2)::after{background:var(--blue);border-radius:50%}
+.mq span:nth-child(3n)::after{width:0;height:0;background:none;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--red)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding-block:110px;position:relative}
+@media(max-width:700px){section{padding-block:76px}}
+.sh{max-width:760px;margin-bottom:48px}
+.sh.c{text-align:center;margin-left:auto;margin-right:auto}
+.sh h2{font-size:clamp(32px,4.6vw,56px);margin:16px 0 14px}
+.sh p{margin:0;color:var(--ink-2);font-size:18px}
+/* frase */
+.quote{background:var(--paper);border-block:2px solid var(--navy)}
+.quote .w{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+@media(max-width:760px){.quote .w{grid-template-columns:1fr;gap:24px}}
+.quote blockquote{margin:0;font:700 clamp(26px,3.4vw,44px)/1.25 var(--fd);letter-spacing:-.02em}
+.quote blockquote em{font-style:normal;background:linear-gradient(transparent 62%,rgba(253,185,19,.6) 62%)}
+.quote cite{display:block;margin-top:18px;font:italic 600 18px var(--fb);color:var(--ink-2)}
+.quote .mark{font:800 160px/0.7 var(--fd);color:var(--red)}
+/* para quién */
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.tab{font:800 16px var(--fb);border:2px solid var(--navy);background:#fff;color:var(--navy);padding:12px 22px;border-radius:14px;cursor:pointer;transition:all .2s}
+.tab[aria-selected="true"]{background:var(--navy);color:#fff;box-shadow:4px 4px 0 var(--yel)}
+.panel{display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:center;background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:40px;box-shadow:8px 8px 0 var(--navy)}
+@media(max-width:860px){.panel{grid-template-columns:1fr;padding:28px}}
+.panel h3{font-size:clamp(26px,3vw,38px);margin-bottom:12px}
+.panel p{margin:0;color:var(--ink-2)}
+.panel ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.panel li{display:flex;gap:14px;align-items:center;font-weight:800;font-size:17px;padding:14px 18px;border-radius:16px;background:var(--cream)}
+.panel li i{flex:none;width:16px;height:16px}
+.sq{background:var(--red)}.ci{background:var(--blue);border-radius:50%}.tr3{width:0!important;height:0!important;border-left:9px solid transparent;border-right:9px solid transparent;border-bottom:16px solid var(--ora)}
+/* servicios */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.svc{position:relative;background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:30px;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s}
+.svc:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--navy)}
+.svc .ic{width:58px;height:58px;margin-bottom:22px}
+.svc .who{font:800 12px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.svc h3{font-size:22px;margin:6px 0 10px}
+.svc p{margin:0;color:var(--ink-2);font-size:16px}
+.svc.hot{background:var(--yel)}
+.svc.hot p,.svc.hot .who{color:var(--navy)}
+.svc.dark{background:var(--navy);color:#fff}.svc.dark p,.svc.dark .who{color:#c9d2e6}
+/* PAKI = psico ludico afectivo */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--navy);border-radius:var(--r);overflow:hidden;background:#fff}
+@media(max-width:860px){.trio{grid-template-columns:1fr}}
+.pil{padding:40px 34px;border-right:2px solid var(--navy)}
+.pil:last-child{border-right:0}
+@media(max-width:860px){.pil{border-right:0;border-bottom:2px solid var(--navy)}.pil:last-child{border-bottom:0}}
+.pil .big{font:800 clamp(34px,4vw,50px)/1 var(--fd);margin:18px 0 14px}
+.pil p{margin:0;color:var(--ink-2)}
+.pil .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.pil .tags span{font-weight:800;font-size:13px;padding:5px 12px;border-radius:999px;background:var(--cream)}
+.p1 .big{color:var(--blue)}.p2 .big{color:var(--ora)}.p3 .big{color:var(--red)}
+/* equipo */
+.team{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:20px}
+@media(max-width:960px){.team{grid-template-columns:1fr}}
+.mem{background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;gap:16px}
+.mem.lead{background:var(--navy);color:#fff}
+.av{width:96px;height:96px;border-radius:26px;display:grid;place-items:center;background:var(--cream)}
+.mem.lead .av{background:#26385f}
+.av svg{width:70px;height:70px}
+.mem .role{font:800 12.5px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.mem.lead .role{color:var(--yel)}
+.mem h3{font-size:26px}
+.mem p{margin:0;color:var(--ink-2)}.mem.lead p{color:#c9d2e6}
+.creds{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.creds li{font-weight:800;font-size:13.5px;padding:7px 12px;border-radius:12px;background:var(--cream);color:var(--navy)}
+.mem.lead .creds li{background:#26385f;color:#fff}
+/* opiniones */
+.ops{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center}
+@media(max-width:860px){.ops{grid-template-columns:1fr}}
+.score{background:var(--blue);color:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:40px;box-shadow:8px 8px 0 var(--navy)}
+.score b{display:block;font:800 clamp(80px,10vw,120px)/1 var(--fd)}
+.score .s{font-size:26px;letter-spacing:3px;color:var(--yel)}
+.bubs{display:grid;gap:14px}
+.bub{background:#fff;border:2px solid var(--navy);border-radius:24px 24px 24px 6px;padding:20px 24px;font-weight:700}
+.bub:nth-child(2){margin-left:40px;border-radius:24px 24px 6px 24px}
+.bub small{display:block;margin-top:6px;font-weight:700;color:var(--ink-2);font-size:13px}
+/* redes */
+.hub{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.soc{grid-column:span 2;display:flex;flex-direction:column;justify-content:space-between;gap:30px;min-height:200px;border:2px solid var(--navy);border-radius:var(--r);padding:26px;text-decoration:none;transition:transform .3s var(--ease),box-shadow .3s}
+.soc:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--navy)}
+.soc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.soc svg{width:38px;height:38px}
+.soc .arr{font:800 22px var(--fd)}
+.soc h3{font-size:22px}.soc p{margin:4px 0 0;font-weight:700;opacity:.8}
+.soc.tt{grid-column:span 3;background:var(--navy);color:#fff;min-height:260px}
+.soc.ig{grid-column:span 3;background:var(--red);color:#fff;min-height:260px}
+.soc.fb{background:var(--blue);color:#fff}.soc.wa{background:var(--yel)}.soc.ml{background:#fff}
+.stats{display:flex;gap:28px;flex-wrap:wrap}
+.stats b{display:block;font:800 34px/1 var(--fd)}
+.stats span{font-weight:700;font-size:13px;opacity:.8}
+@media(max-width:860px){.hub{grid-template-columns:1fr 1fr}.soc,.soc.tt,.soc.ig{grid-column:span 2}.soc.fb,.soc.wa{grid-column:span 1}}
+/* contacto */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:900px){.contact{grid-template-columns:1fr}}
+.card{background:#fff;border:2px solid var(--navy);border-radius:var(--r);padding:34px}
+.card h3{font-size:28px;margin-bottom:18px}
+.lbl{font:800 12px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:14px 0 4px}
+.hours{width:100%;border-collapse:collapse;font-size:15.5px}
+.hours td{padding:7px 0;border-bottom:2px dotted var(--line)}.hours td:last-child{text-align:right;font-weight:800}
+.hours tr.today td{color:var(--red)}
+.map{border:2px solid var(--navy);border-radius:var(--r);overflow:hidden;min-height:260px;margin-top:20px;background:var(--cream)}
+.map iframe{width:100%;height:280px;border:0;display:block}
+form{display:grid;gap:14px}
+form label{display:grid;gap:6px;font-weight:800;font-size:14px}
+input,select,textarea{font:600 16px var(--fb);color:var(--navy);background:var(--cream);border:2px solid var(--navy);border-radius:14px;padding:12px 14px;width:100%}
+textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;box-shadow:4px 4px 0 var(--yel)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.row2{grid-template-columns:1fr}}
+.hint{font-size:13px;color:var(--ink-2);margin:0;text-align:center}
+footer{background:var(--navy);color:#fff;padding-block:56px 110px;margin-top:40px}
+footer .w{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+@media(max-width:760px){footer .w{grid-template-columns:1fr}}
+footer p{color:#c9d2e6;margin:10px 0 0}
+footer a{color:#fff;text-decoration:none;font-weight:700}
+footer .k{font:800 12px var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--yel);margin-bottom:10px}
+.wa-f{position:fixed;right:22px;bottom:30px;z-index:45;width:62px;height:62px;border-radius:18px;background:#25d366;display:grid;place-items:center;border:2px solid var(--navy);box-shadow:4px 4px 0 var(--navy);transition:transform .25s}
+.wa-f:hover{transform:translate(-2px,-2px)}.wa-f svg{width:32px;height:32px;fill:#fff}
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:44}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 282 80">
+      <rect x="0" y="0" width="40" height="40" fill="#fdb913"/><path d="M40 0h6a20 20 0 0 1 0 40h-6z" fill="#1ea5de"/><rect x="0" y="40" width="40" height="40" fill="#e5332a"/>
+      <path d="M110 0l20 40H90z" fill="#fdb913"/><path d="M90 40l-20 40h40z" fill="#1ea5de"/><path d="M90 40h40l-20 40z" fill="#e5332a"/><path d="M130 40l-20 40h40z" fill="#1ea5de"/>
+      <rect x="156" y="0" width="38" height="40" fill="#1ea5de"/><path d="M194 0h40L194 40z" fill="#fdb913"/><rect x="156" y="40" width="38" height="40" fill="#fdb913"/><path d="M194 40l40 40h-40z" fill="#e5332a"/>
+      <circle cx="260" cy="18" r="18" fill="#e5332a"/><rect x="242" y="40" width="36" height="40" fill="#fdb913"/>
+    </symbol>
+    <symbol id="wa" viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.4 2.4 3.6 5.7 5c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.3z"/></symbol>
+    <!-- personajes PAKI -->
+    <symbol id="p-circ" viewBox="0 0 120 230">
+      <path d="M48 168v40M72 168v40" stroke="#1b2a4a" stroke-width="10" stroke-linecap="round"/>
+      <ellipse cx="44" cy="214" rx="12" ry="7" fill="#e5332a"/><ellipse cx="76" cy="214" rx="12" ry="7" fill="#e5332a"/>
+      <rect x="34" y="96" width="52" height="76" rx="12" fill="#fdb913"/><circle cx="60" cy="118" r="3" fill="#1b2a4a"/><circle cx="60" cy="134" r="3" fill="#1b2a4a"/>
+      <path d="M36 112l-18 30M84 112l18 30" stroke="#1b2a4a" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="60" cy="54" r="48" fill="#1ea5de"/>
+      <ellipse cx="44" cy="50" rx="9" ry="11" fill="#fff"/><ellipse cx="72" cy="50" rx="9" ry="11" fill="#fff"/><circle cx="46" cy="52" r="5" fill="#1b2a4a"/><circle cx="74" cy="52" r="5" fill="#1b2a4a"/>
+      <rect class="lid" x="34" y="38" width="48" height="24" fill="#1ea5de"/>
+    </symbol>
+    <symbol id="p-tri" viewBox="0 0 130 240">
+      <path d="M50 176v42M80 176v42" stroke="#1b2a4a" stroke-width="10" stroke-linecap="round"/>
+      <ellipse cx="46" cy="222" rx="12" ry="7" fill="#1b2a4a"/><ellipse cx="84" cy="222" rx="12" ry="7" fill="#1b2a4a"/>
+      <path d="M36 150h58l6 40H30z" fill="#1b2a4a"/><circle cx="48" cy="166" r="4" fill="#fff"/><circle cx="66" cy="176" r="4" fill="#fff"/><circle cx="82" cy="162" r="4" fill="#fff"/><circle cx="58" cy="182" r="3.5" fill="#fff"/>
+      <rect x="38" y="104" width="54" height="52" rx="10" fill="#e5332a"/>
+      <path d="M40 118l-20 26M90 118l20 26" stroke="#1b2a4a" stroke-width="7" stroke-linecap="round"/>
+      <path d="M65 6l58 100H7z" fill="#f39200" stroke-linejoin="round"/>
+      <ellipse cx="52" cy="72" rx="8" ry="10" fill="#fff"/><ellipse cx="78" cy="72" rx="8" ry="10" fill="#fff"/><circle cx="54" cy="74" r="4.5" fill="#1b2a4a"/><circle cx="80" cy="74" r="4.5" fill="#1b2a4a"/>
+      <rect class="lid" x="42" y="60" width="46" height="24" fill="#f39200"/>
+    </symbol>
+    <symbol id="p-sq" viewBox="0 0 120 230">
+      <path d="M46 170v40M74 170v40" stroke="#1ea5de" stroke-width="12" stroke-linecap="round"/>
+      <ellipse cx="42" cy="214" rx="12" ry="7" fill="#1b2a4a"/><ellipse cx="78" cy="214" rx="12" ry="7" fill="#1b2a4a"/>
+      <rect x="32" y="100" width="56" height="74" rx="12" fill="#c86fb4"/>
+      <path d="M34 114l-20 24M86 114l22-30" stroke="#1b2a4a" stroke-width="7" stroke-linecap="round"/>
+      <rect x="14" y="6" width="92" height="92" rx="8" fill="#e5332a"/>
+      <ellipse cx="46" cy="50" rx="9" ry="11" fill="#fff"/><ellipse cx="74" cy="50" rx="9" ry="11" fill="#fff"/><circle cx="48" cy="52" r="5" fill="#1b2a4a"/><circle cx="76" cy="52" r="5" fill="#1b2a4a"/>
+      <rect class="lid" x="34" y="38" width="52" height="24" fill="#e5332a"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="demo">Muestra gratuita preparada para <b>Centro PAKI</b> por Avame.<a href="https://calendar.app.google/eAsZzpuzk8ziZT5h7" target="_blank" rel="noopener">¿Te gusta? Agenda 10 min →</a></div>
+
+<header><div class="w nav">
+  <a class="brand" href="#" aria-label="Centro PAKI, inicio"><svg viewBox="0 0 282 80"><use href="#logo"/></svg><small>Centro<br>Psico·Lúdico·Afectivo</small></a>
+  <nav class="links"><a href="#para-quien">¿Para quién?</a><a href="#servicios">Servicios</a><a href="#equipo">Equipo</a><a href="#redes">Redes</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn btn-y" href="#contacto">Agenda una cita</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="w hero-in">
+  <div>
+    <span class="kick"><b><i></i><i></i><i></i></b>Centro Psico·Lúdico·Afectivo</span>
+    <h1>Un lugar para <span class="c1">sentir</span>, <span class="c3">jugar</span> y <span class="c2">sanar</span>.</h1>
+    <p class="lead">Terapia psicológica, evaluaciones, terapia de lenguaje y talleres para niños, adolescentes, adultos y familias, en Ciudad Satélite.</p>
+    <div class="ctas">
+      <a class="btn btn-y" href="#contacto">Agenda una cita</a>
+      <a class="btn btn-o" href="#servicios">Ver servicios</a>
+    </div>
+    <div class="chips"><span class="chip"><span class="s">★</span> 4.7 en Google</span><span class="chip">+3.4K en TikTok</span><span class="chip">Ciudad Satélite</span></div>
+  </div>
+  <div class="stage rv" aria-hidden="true">
+    <div class="disc"></div>
+    <svg class="fl" style="left:4%;top:4%;width:40px" viewBox="0 0 40 40"><rect width="40" height="40" fill="#e5332a"/></svg>
+    <svg class="fl" style="right:10%;top:2%;width:38px;animation-delay:-2s" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#1ea5de"/></svg>
+    <svg class="fl" style="right:2%;bottom:40%;width:42px;animation-delay:-4s" viewBox="0 0 40 36"><path d="M20 0l20 36H0z" fill="#f39200"/></svg>
+    <svg class="fl" style="left:0;bottom:44%;width:30px;animation-delay:-3s" viewBox="0 0 40 36"><path d="M20 0l20 36H0z" fill="#1b2a4a"/></svg>
+    <div class="char ch1"><svg viewBox="0 0 120 230"><use href="#p-circ"/></svg></div>
+    <div class="char ch2"><svg viewBox="0 0 130 240"><use href="#p-tri"/></svg></div>
+    <div class="char ch3"><svg viewBox="0 0 120 230"><use href="#p-sq"/></svg></div>
+    <div class="badge b1">Psico · Lúdico · Afectivo<small>Ciencia, juego y vínculo</small></div>
+    <div class="badge b2">Niños, adolescentes<small>adultos y familias</small></div>
+  </div>
+</div></section>
+
+<div class="mq" aria-hidden="true"><div class="tr"><span>Evaluación emocional infantil</span><span>Terapia psicológica infantil</span><span>Terapia para adolescentes</span><span>Terapia de lenguaje</span><span>Evaluación neuropsicopedagógica</span><span>Talleres para niños</span><span>Talleres para adultos</span><span>Escuela para padres</span><span>Curso de verano</span><span>Evaluación emocional infantil</span><span>Terapia psicológica infantil</span><span>Terapia para adolescentes</span><span>Terapia de lenguaje</span><span>Evaluación neuropsicopedagógica</span><span>Talleres para niños</span><span>Talleres para adultos</span><span>Escuela para padres</span><span>Curso de verano</span></div></div>
+
+<section class="quote" style="padding-block:80px"><div class="w rv">
+  <div class="mark" aria-hidden="true">“</div>
+  <div><blockquote>Nadie sana siendo la misma persona, <em>la sanación es un viaje de transformación.</em></blockquote><cite>— Psic. Paty M. Lule, fundadora de Centro PAKI</cite></div>
+</div></section>
+
+<section id="para-quien"><div class="w">
+  <div class="sh rv"><span class="kick"><b><i></i><i></i><i></i></b>¿Para quién es PAKI?</span><h2>Acompañamos a toda la familia</h2><p>Elige para quién buscas apoyo y te mostramos cómo podemos ayudar.</p></div>
+  <div class="tabs rv" role="tablist" id="tabs"></div>
+  <div class="panel rv" id="panel" role="tabpanel"></div>
+</div></section>
+
+<section id="servicios" style="padding-top:20px"><div class="w">
+  <div class="sh rv"><span class="kick"><b><i></i><i></i><i></i></b>Servicios</span><h2>Todo lo que tu familia necesita, en un solo lugar</h2></div>
+  <div class="grid">
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 58"><circle cx="29" cy="29" r="29" fill="#1ea5de"/></svg><span class="who">Niños</span><h3>Evaluación emocional infantil</h3><p>Entendemos cómo se siente tu hijo para saber exactamente cómo ayudarlo.</p></div>
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 52"><path d="M29 0l29 52H0z" fill="#f39200"/></svg><span class="who">Niños</span><h3>Evaluación neuropsicopedagógica</h3><p>Valoramos atención, aprendizaje y desarrollo para orientar a la escuela y a la familia.</p></div>
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 58"><rect width="58" height="58" fill="#e5332a"/></svg><span class="who">Niños</span><h3>Terapia psicológica infantil</h3><p>Terapia de juego, arteterapia y herramientas cognitivo-conductuales para que expresen y manejen sus emociones.</p></div>
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 58"><rect width="58" height="58" rx="18" fill="#1b2a4a"/></svg><span class="who">Adolescentes</span><h3>Terapia para adolescentes</h3><p>Un espacio propio para entender lo que viven y fortalecer su seguridad y confianza.</p></div>
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 58"><circle cx="29" cy="29" r="29" fill="#fdb913"/><circle cx="29" cy="29" r="12" fill="#e5332a"/></svg><span class="who">Niños</span><h3>Terapia de lenguaje</h3><p>Enfoque oro-sensomotriz, terapia de alimentación y de aprendizaje, para niños con o sin discapacidad.</p></div>
+    <div class="svc dark rv"><svg class="ic" viewBox="0 0 58 58"><path d="M0 0h58L0 58z" fill="#fdb913"/><path d="M58 58H0L58 0z" fill="#1ea5de"/></svg><span class="who">Adultos</span><h3>Terapia individual y de pareja</h3><p>Herramientas para ver tu vida desde otra perspectiva y construir relaciones más sanas.</p></div>
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 58"><rect width="27" height="27" fill="#1ea5de"/><rect x="31" width="27" height="27" fill="#fdb913"/><rect y="31" width="27" height="27" fill="#e5332a"/><rect x="31" y="31" width="27" height="27" fill="#f39200"/></svg><span class="who">Niños y adultos</span><h3>Talleres</h3><p>Talleres para niños con materiales para manejar sus emociones, y talleres para adultos y parejas.</p></div>
+    <div class="svc rv"><svg class="ic" viewBox="0 0 58 58"><path d="M29 4l25 22v28H4V26z" fill="#e5332a"/><rect x="22" y="34" width="14" height="20" fill="#fffdf8"/></svg><span class="who">Mamás y papás</span><h3>Escuela para padres</h3><p>Orientación práctica para acompañar mejor a tus hijos en cada etapa.</p></div>
+    <div class="svc hot rv"><svg class="ic" viewBox="0 0 58 58"><circle cx="29" cy="29" r="14" fill="#e5332a"/><g stroke="#e5332a" stroke-width="5" stroke-linecap="round"><path d="M29 2v8M29 48v8M2 29h8M48 29h8M10 10l6 6M42 42l6 6M48 10l-6 6M16 42l-6 6"/></g></svg><span class="who">Vacaciones</span><h3>Curso de verano</h3><p>Diversión con propósito: juego, emociones y aprendizaje en las vacaciones. Pregunta por las fechas.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="w">
+  <div class="sh c rv"><span class="kick"><b><i></i><i></i><i></i></b>Nuestro nombre, nuestra forma de trabajar</span><h2>Psico · Lúdico · Afectivo</h2></div>
+  <div class="trio rv">
+    <div class="pil p1"><svg width="46" height="46" viewBox="0 0 46 46"><circle cx="23" cy="23" r="23" fill="#1ea5de"/></svg><div class="big">Psico</div><p>Bases científicas y profesionales: evaluación certificada, terapia racional emotivo conductual y herramientas cognitivo-conductuales.</p><div class="tags"><span>TREC</span><span>Evaluación infantil</span><span>Cognitivo-conductual</span></div></div>
+    <div class="pil p2"><svg width="50" height="46" viewBox="0 0 50 46"><path d="M25 0l25 46H0z" fill="#f39200"/></svg><div class="big">Lúdico</div><p>Los niños se expresan jugando. Usamos el juego, el arte y los talleres como camino para sanar y aprender.</p><div class="tags"><span>Terapia de juego</span><span>Arteterapia</span><span>Talleres</span></div></div>
+    <div class="pil p3"><svg width="46" height="46" viewBox="0 0 46 46"><rect width="46" height="46" fill="#e5332a"/></svg><div class="big">Afectivo</div><p>Un enfoque humanista y empático: el vínculo con cada niño y su familia es parte del tratamiento.</p><div class="tags"><span>Humanista</span><span>Gestalt</span><span>Escuela para padres</span></div></div>
+  </div>
+</div></section>
+
+<section id="equipo" style="padding-top:20px"><div class="w">
+  <div class="sh rv"><span class="kick"><b><i></i><i></i><i></i></b>Equipo</span><h2>Profesionales que aman lo que hacen</h2><p>Un equipo especializado en la salud emocional, el lenguaje y el aprendizaje de niños, adolescentes y familias.</p></div>
+  <div class="team">
+    <article class="mem lead rv">
+      <div class="av"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="#1ea5de"/><ellipse cx="44" cy="56" rx="9" ry="11" fill="#fff"/><ellipse cx="74" cy="56" rx="9" ry="11" fill="#fff"/><circle cx="46" cy="58" r="5" fill="#1b2a4a"/><circle cx="76" cy="58" r="5" fill="#1b2a4a"/></svg></div>
+      <span class="role">Fundadora y directora</span><h3>Psic. Paty M. Lule</h3>
+      <p>Licenciada en Psicología, especialista en Terapia Racional Emotivo Conductual y con maestría en Tanatología. Sus pacientes destacan sus herramientas innovadoras y su trato objetivo, empático y muy humano.</p>
+      <ul class="creds"><li>Lic. en Psicología</li><li>Especialidad en TREC</li><li>Certificada en Evaluación infantil</li><li>Perito en Psicología infantil</li><li>Maestría en Tanatología</li><li>Dipl. Terapia de juego Gestalt y humanista</li><li>Dipl. Hipnosis Ericksoniana</li></ul>
+    </article>
+    <article class="mem rv">
+      <div class="av"><svg viewBox="0 0 120 120"><path d="M60 8l52 96H8z" fill="#f39200"/><ellipse cx="48" cy="72" rx="8" ry="10" fill="#fff"/><ellipse cx="72" cy="72" rx="8" ry="10" fill="#fff"/><circle cx="50" cy="74" r="4.5" fill="#1b2a4a"/><circle cx="74" cy="74" r="4.5" fill="#1b2a4a"/></svg></div>
+      <span class="role">Psicóloga infantil</span><h3>Lic. Zitlali J. Robles</h3>
+      <p>Terapia infantil con enfoque humanista, técnicas de arteterapia y herramientas cognitivo-conductuales. Ama trabajar con niños y adolescentes y darles las mejores herramientas para su bienestar.</p>
+      <ul class="creds"><li>Lic. en Psicología</li><li>Arteterapia</li><li>Enfoque humanista</li></ul>
+    </article>
+    <article class="mem rv">
+      <div class="av"><svg viewBox="0 0 120 120"><rect x="14" y="14" width="92" height="92" rx="8" fill="#e5332a"/><ellipse cx="46" cy="56" rx="9" ry="11" fill="#fff"/><ellipse cx="74" cy="56" rx="9" ry="11" fill="#fff"/><circle cx="48" cy="58" r="5" fill="#1b2a4a"/><circle cx="76" cy="58" r="5" fill="#1b2a4a"/></svg></div>
+      <span class="role">Terapeuta de lenguaje</span><h3>Lic. Aranza Quintana Esteban</h3>
+      <p>Terapias de lenguaje con enfoque oro-sensomotriz, terapia de alimentación y terapias de aprendizaje. Le apasiona trabajar con niños, con o sin discapacidad o daño neurológico.</p>
+      <ul class="creds"><li>Lic. en Comunicación Humana</li><li>Oro-sensomotriz</li><li>Terapia de alimentación</li></ul>
+    </article>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="w ops">
+  <div class="score rv"><span class="kick" style="color:#fff">Opiniones en Google</span><b>4.7</b><div class="s">★★★★★</div><p style="margin:10px 0 18px;font-weight:700">Calificación promedio de 14 familias en Google Maps.</p><a class="btn btn-y" href="https://www.google.com/maps/place/?q=place_id:ChIJUb-KgiUD0oURtLUX_TaAEWo" target="_blank" rel="noopener">Leer opiniones</a></div>
+  <div class="bubs">
+    <div class="bub rv">Familias cuentan que sus hijos mejoraron en confianza y en la escuela desde que empezaron terapia.<small>Resumen de reseñas en Google</small></div>
+    <div class="bub rv">Destacan los talleres para niños: muchas herramientas para manejar sus emociones y guía para los papás, a precios accesibles.<small>Resumen de reseñas en Google</small></div>
+    <div class="bub rv">Describen el centro como un espacio amplio, acogedor y muy bonito para el desarrollo de cada paciente.<small>Resumen de reseñas en Google</small></div>
+  </div>
+</div></section>
+
+<section id="redes" style="padding-top:20px"><div class="w">
+  <div class="sh rv"><span class="kick"><b><i></i><i></i><i></i></b>Comunidad PAKI</span><h2>Todo PAKI en un solo lugar</h2><p>Síguenos para tips de crianza, emociones y aprendizaje, y entérate primero de talleres y cursos.</p></div>
+  <div class="hub">
+    <a class="soc tt rv" href="https://www.tiktok.com/@centropaki" target="_blank" rel="noopener">
+      <div class="top"><svg viewBox="0 0 24 24" fill="#fff"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2-2.8V9.2a6.3 6.3 0 1 0 5.3 6.2V8.6a7.8 7.8 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7z"/></svg><span class="arr">↗</span></div>
+      <div><h3>TikTok</h3><p>@centropaki · Centro Psico-Lúdico Afectivo</p><div class="stats" style="margin-top:18px"><div><b>3.4K</b><span>seguidores</span></div><div><b>15.8K</b><span>me gusta</span></div></div></div>
+    </a>
+    <a class="soc ig rv" href="https://www.instagram.com/centropaki" target="_blank" rel="noopener">
+      <div class="top"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg><span class="arr">↗</span></div>
+      <div><h3>Instagram</h3><p>@centropaki · Fotos de talleres, frases y novedades</p></div>
+    </a>
+    <a class="soc fb rv" href="https://www.facebook.com/centropaki" target="_blank" rel="noopener">
+      <div class="top"><svg viewBox="0 0 24 24" fill="#fff"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg><span class="arr">↗</span></div>
+      <div><h3>Facebook</h3><p>@centropaki</p></div>
+    </a>
+    <a class="soc wa rv" href="https://wa.me/525562858365?text=Hola%20Centro%20PAKI%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener">
+      <div class="top"><svg viewBox="0 0 32 32" fill="#1b2a4a"><use href="#wa"/></svg><span class="arr">↗</span></div>
+      <div><h3>WhatsApp</h3><p>55 6285 8365</p></div>
+    </a>
+    <a class="soc ml rv" href="mailto:centropaki@gmail.com">
+      <div class="top"><svg viewBox="0 0 24 24" fill="none" stroke="#1b2a4a" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="arr">↗</span></div>
+      <div><h3>Correo</h3><p>centropaki@gmail.com</p></div>
+    </a>
+  </div>
+</div></section>
+
+<section id="contacto" style="padding-top:20px"><div class="w contact">
+  <div class="card rv">
+    <h3>Agenda una cita</h3>
+    <form id="f">
+      <div class="row2">
+        <label for="n">Tu nombre<input id="n" required placeholder="¿Cómo te llamas?"></label>
+        <label for="p">¿Para quién?<select id="p"><option>Para mi hijo/a</option><option>Para mi adolescente</option><option>Para mí</option><option>Para mi pareja y yo</option><option>Para mi familia</option></select></label>
+      </div>
+      <label for="s">Servicio<select id="s"><option>Evaluación emocional infantil</option><option>Evaluación neuropsicopedagógica</option><option>Terapia psicológica infantil</option><option>Terapia para adolescentes</option><option>Terapia de lenguaje</option><option>Terapia individual o de pareja</option><option>Talleres</option><option>Escuela para padres</option><option>Curso de verano</option><option>No estoy seguro, quiero orientación</option></select></label>
+      <label for="m">Cuéntanos un poco (opcional)<textarea id="m" placeholder="Edad del niño/a, qué has notado o qué te gustaría trabajar"></textarea></label>
+      <button class="btn btn-y" type="submit"><svg viewBox="0 0 32 32" fill="#1b2a4a"><use href="#wa"/></svg>Enviar por WhatsApp</button>
+      <p class="hint">Tu mensaje llega directo al WhatsApp de Centro PAKI.</p>
+    </form>
+  </div>
+  <div class="card rv">
+    <h3>Visítanos</h3>
+    <div class="lbl">Dirección</div><p style="margin:0">Circuito Científicos No. 83, Ciudad Satélite, 53100, Naucalpan, Estado de México</p>
+    <div class="lbl">Horario</div>
+    <table class="hours"><tr data-d="1"><td>Lunes</td><td>10:00 – 19:00</td></tr><tr data-d="2"><td>Martes</td><td>10:00 – 19:00</td></tr><tr data-d="3"><td>Miércoles</td><td>10:00 – 19:00</td></tr><tr data-d="4"><td>Jueves</td><td>10:00 – 19:00</td></tr><tr data-d="5"><td>Viernes</td><td>10:00 – 19:00</td></tr><tr data-d="6"><td>Sábado</td><td>10:00 – 14:00</td></tr><tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr></table>
+    <div class="map"><iframe title="Mapa de Centro PAKI" loading="lazy" src="https://maps.google.com/maps?q=Centro%20PAKI%2C%20Circuito%20Cient%C3%ADficos%2083%2C%20Ciudad%20Sat%C3%A9lite%2C%20Naucalpan&output=embed"></iframe></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="w">
+  <div><svg viewBox="0 0 282 80" style="height:44px;width:auto"><use href="#logo"/></svg><p>Centro Psico·Lúdico·Afectivo. Terapia, evaluación y talleres para niños, adolescentes, adultos y familias en Ciudad Satélite.</p></div>
+  <div><div class="k">Contacto</div><p><a href="https://wa.me/525562858365" target="_blank" rel="noopener">55 6285 8365</a><br><a href="mailto:centropaki@gmail.com">centropaki@gmail.com</a><br>Circuito Científicos 83, Ciudad Satélite</p></div>
+  <div><div class="k">Redes</div><p><a href="https://www.tiktok.com/@centropaki" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.instagram.com/centropaki" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/centropaki" target="_blank" rel="noopener">Facebook</a></p><p style="font-size:13px">© 2026 Centro PAKI · Sitio de muestra creado por Avame</p></div>
+</div></footer>
+<a class="wa-f" href="https://wa.me/525562858365?text=Hola%20Centro%20PAKI%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><use href="#wa"/></svg></a>
+<div class="bottom stripe" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<script>
+document.documentElement.classList.add("js");
+const rv=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});rv.forEach(el=>io.observe(el))}
+setTimeout(()=>rv.forEach(el=>el.classList.add("in")),2500);
+/* ¿para quién? */
+const T=[
+ {t:"Niños",h:"Para que tu hijo exprese y entienda lo que siente",p:"A través del juego, el arte y herramientas probadas, los niños ganan confianza, manejan su frustración y mejoran en la escuela.",i:["Evaluación emocional infantil","Evaluación neuropsicopedagógica","Terapia psicológica infantil","Terapia de lenguaje y alimentación","Talleres y curso de verano"],s:"ci"},
+ {t:"Adolescentes",h:"Un espacio propio para crecer con seguridad",p:"Acompañamos a los adolescentes a entender sus emociones, fortalecer su autoestima y encontrar su propio camino.",i:["Terapia para adolescentes","Evaluación emocional","Talleres de manejo emocional"],s:"tr3"},
+ {t:"Adultos",h:"Ver tu vida desde otra perspectiva",p:"Herramientas innovadoras y un trato humano para trabajar en ti, tu historia y tus relaciones.",i:["Terapia individual","Taller para parejas","Talleres para adultos","Acompañamiento en duelo (tanatología)"],s:"sq"},
+ {t:"Familias",h:"Acompañar mejor a tus hijos, en equipo",p:"Guiamos a mamás y papás para que tengan herramientas para manejar la frustración, poner límites y acompañar cada etapa.",i:["Escuela para padres","Orientación a padres en cada proceso","Talleres para niños y adultos"],s:"ci"}];
+const tabs=document.getElementById("tabs"),panel=document.getElementById("panel");
+function show(k){[...tabs.children].forEach((b,j)=>b.setAttribute("aria-selected",j===k));const d=T[k];
+  panel.innerHTML=`<div><h3>${d.h}</h3><p>${d.p}</p><p style="margin-top:22px"><a class="btn btn-n" href="#contacto" data-pq="${k}">Agendar para ${d.t.toLowerCase()}</a></p></div><ul>${d.i.map(x=>`<li><i class="${d.s}"></i>${x}</li>`).join("")}</ul>`}
+T.forEach((d,k)=>{const b=document.createElement("button");b.type="button";b.className="tab";b.role="tab";b.textContent=d.t;b.onclick=()=>show(k);tabs.appendChild(b)});show(0);
+const PQ=["Para mi hijo/a","Para mi adolescente","Para mí","Para mi familia"];
+panel.addEventListener("click",e=>{const a=e.target.closest("[data-pq]");if(a)document.getElementById("p").value=PQ[+a.dataset.pq]});
+/* horario de hoy */
+const dn=+new Intl.DateTimeFormat("en-US",{timeZone:"America/Mexico_City",weekday:"short"}).formatToParts(new Date()).find(x=>x.type==="weekday").value.replace(/Sun|Mon|Tue|Wed|Thu|Fri|Sat/,m=>({Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6})[m]);
+const tr=document.querySelector('.hours tr[data-d="'+dn+'"]');if(tr)tr.classList.add("today");
+/* formulario */
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const txt=`Hola Centro PAKI, soy ${v("n")}. Busco apoyo ${v("p").toLowerCase()}: ${v("s")}.`+(v("m")?` ${v("m")}`:"")+" ¿Qué disponibilidad tienen?";
+  window.open("https://wa.me/525562858365?text="+encodeURIComponent(txt),"_blank","noopener")});
+</script>
+</body>
+</html>
