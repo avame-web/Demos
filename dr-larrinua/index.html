@@ -20,8 +20,8 @@ h1,h2,h3{font-family:var(--fd);font-weight:400;line-height:1.05;margin:0;letter-
 .eye::before{content:"";width:28px;height:1px;background:var(--blue)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;font:500 12px var(--fb);letter-spacing:.24em;text-transform:uppercase;padding:18px 30px;text-decoration:none;border:1px solid var(--white);color:var(--white);background:transparent;cursor:pointer;transition:background .35s,color .35s,border-color .35s}
 .btn:hover{background:var(--white);color:var(--black)}
-.btn.b{background:var(--blue);border-color:var(--blue)}
-.btn.b:hover{background:var(--blue-d);border-color:var(--blue-d);color:#fff}
+.btn.b{background:var(--white);border-color:var(--white);color:var(--black)}
+.btn.b:hover{background:transparent;border-color:var(--white);color:var(--white)}
 .btn .ar{transition:transform .35s var(--ease)}.btn:hover .ar{transform:translateX(5px)}
 /* barra superior */
 .demo{background:var(--white);color:var(--black);font-size:12.5px;text-align:center;padding:8px 16px;font-weight:500;position:relative;z-index:60}
@@ -35,7 +35,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,11,.82);backdrop-f
 .logo{display:flex;align-items:center;gap:16px;text-decoration:none}
 .logo img{height:58px;width:auto}
 .logo span{font-family:var(--fd);font-size:19px;line-height:1.15;letter-spacing:.04em}
-.logo span small{display:block;font-family:var(--fb);font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--mid)}
+.logo span small{display:block;margin-top:5px;font-family:var(--fb);font-size:11px;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--soft)}
 .links{display:flex;gap:34px;font-size:11.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase}
 .links a{text-decoration:none;color:var(--soft);position:relative;padding-block:6px}
 .links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
@@ -54,10 +54,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,11,.82);backdrop-f
 .hero .facts{display:flex;gap:40px;flex-wrap:wrap;margin-top:56px;padding-top:30px;border-top:1px solid var(--line)}
 .hero .facts b{display:block;font-family:var(--fd);font-weight:400;font-size:42px;line-height:1}
 .hero .facts span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mid)}
-.hero-ph{position:relative;min-height:560px}
-.hero-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:grayscale(1) contrast(1.08) brightness(.92);animation:rev 2.2s var(--ease) both}
+.hero-ph{position:relative;min-height:560px;background:radial-gradient(55% 60% at 55% 45%,#26262b 0%,#141416 55%,var(--black) 80%)}
+.hero-ph img{position:absolute;left:0;right:0;bottom:0;width:100%;height:94%;object-fit:contain;object-position:50% 100%;animation:rev 2.2s var(--ease) both}
 @keyframes rev{from{clip-path:inset(0 0 100% 0);transform:scale(1.06)}to{clip-path:inset(0);transform:none}}
-.hero-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--black) 0%,rgba(10,10,11,0) 35%),linear-gradient(0deg,rgba(10,10,11,.75),transparent 40%)}
+.hero-ph::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,var(--black) 0%,rgba(10,10,11,0) 22%)}
 @media(max-width:960px){.hero-tx{padding:70px 24px 40px;order:2}.hero-ph{min-height:520px}.hero-ph::after{background:linear-gradient(0deg,var(--black) 0%,transparent 55%)}}
 .tag-ph{position:absolute;right:24px;bottom:30px;z-index:2;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);display:flex;align-items:center;gap:10px}
 .tag-ph::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 5px rgba(61,134,214,.18)}
@@ -212,7 +212,7 @@ footer a{text-decoration:none;color:var(--soft)}footer a:hover{color:var(--white
     <div class="ctas"><a class="btn b" href="#contacto">Agendar valoración <span class="ar">→</span></a><a class="btn" href="#procedimientos">Procedimientos</a></div>
     <div class="facts"><div><b>+20</b><span>años de trayectoria</span></div><div><b>UNAM</b><span>Cirugía plástica</span></div><div><b>CMCPER</b><span>Certificación</span></div></div>
   </div>
-  <div class="hero-ph"><img src="img/retrato.jpg" alt="Dr. Gerardo Larrinúa Regalado" fetchpriority="high"><span class="tag-ph">Atizapán de Zaragoza · Edo. Méx.</span></div>
+  <div class="hero-ph"><img src="img/retrato.webp" alt="Dr. Gerardo Larrinúa Regalado" fetchpriority="high"><span class="tag-ph">Atizapán de Zaragoza · Edo. Méx.</span></div>
 </section>
 
 <section class="welcome"><div class="w rv">
